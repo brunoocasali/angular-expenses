@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="expensesApp">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=""/>
+    <script src="js/angular.min.js"></script>
+    <script src="js/controller.js"></script>
+    <title>Expenses!</title>
+</head>
+<body ng-controller="ExpenseController">
+<form name="formExpenses" novalidate>
+    <h1>Expenses Control</h1>
+
+    Description:
+    <input type="text" name="textDescription" required maxlength="10"/>
+
+    Value:
+    <input type="text" name="textValue" required/>
+
+    Date:
+    <input type="date" name="textDate" required/>
+
+    Number of Installments:
+    <input type="number" name="textInstallment" required/>
+</form>
+</body>
+</html>
